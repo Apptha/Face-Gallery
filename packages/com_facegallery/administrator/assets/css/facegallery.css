@@ -1,0 +1,102 @@
+/*
+ ********************************************************************
+ * @name            Face Gallery
+ * @version         1.0: assets/css/facegallery.css$
+ * @since           Joomla 3.0
+ * @package         apptha
+ * @subpackage      com_facegallery
+ * @author          Apptha - http://www.apptha.com
+ * @copyright       Copyright (C) 2013 Powered by Apptha
+ * @license 		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @creationDate    March 13 2013
+ ********************************************************************
+ */
+
+.icon-48-albums {
+      background-image: url(../images/l_albums.png);
+      padding-left:60px!important;
+}
+
+.icon-48-album {
+      background-image: url(../images/l_albums.png);
+      padding-left:60px!important;
+}
+
+
+
+#settings_table {width:100%; overflow:hidden;} 
+#settings_table h3{display: block;padding: 0;margin:0 0 18px 0;font-size: 18px; font-weight:bold; line-height: 36px;color: #333;border: 0;border-bottom: 1px solid #e5e5e5;}
+#settings_table h5{display: block;padding: 0;margin:8px 0 0 0;font-size: 14px; font-weight:bold; line-height: 24px;color: #08c;border: 0;}
+#settings_table h5.first_child{margin:0;}
+#settings_table table{width:100%;}
+#settings_table table tr td input[type="text"],label{margin-bottom:8px !important;}
+#settings_table table tr td.first_col{width:250px;}
+#settings_table .col_1,.col_3{float:left; width:48%}
+#settings_table .col_2,.col_4{float:right; width:48%}
+#settings_table .col_1,.col_1{margin-bottom:20px;}
+
+#swfupload-control #log li.success {
+border: 1px solid #ccc;
+margin-bottom:5px;
+background: #ffffff;
+background: -moz-linear-gradient(top,#ffffff 0%,#ededed 100%);
+background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffffff),color-stop(100%,#ededed));
+background: -webkit-linear-gradient(top,#ffffff 0%,#ededed 100%);
+background: -o-linear-gradient(top,#ffffff 0%,#ededed 100%);
+background: -ms-linear-gradient(top,#ffffff 0%,#ededed 100%);
+background: linear-gradient(top,#ffffff 0%,#ededed 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ededed',GradientType=0);
+border-radius: 5px;
+}
+#swfupload-control .section_grid{float:left; width:46%; margin-right:30px;}
+#swfupload-control #log li p.status{color: #51a351;}
+
+#swfupload-control #log li .progress {
+background: #999;
+width: 0%;
+height: 5px;
+border-radius:5px;-webkit-border-radius:5px; -moz-border-radius:5px;
+}
+
+#swfupload-control #log li .progressbar{border: 0; border-radius:5px;-webkit-border-radius:5px; -moz-border-radius:5px; margin:5px 0;}
+
+table#upload_image{margin: 0; padding: 0;}
+table#upload_image tr{}
+table#upload_image tr td{padding-bottom: 10px; font-size: 12px !important;}
+table#upload_image tr td label{float: left; width: 160px;}
+table#upload_image img.thumb_img{margin-left: 10px; border: 1px solid #ccc;padding: 2px; border-radius: 3px; -webkit-border-radius:3px; -moz-border-radius:3px;}
+
+#img_download .controls{margin-left: 0;}
+#img_download .control-label{padding-top: 10px; width: 158px;}
+
+.section_grid{margin-top:20px;}
+.section_grid legend{font-size: 18px; color:#08c;}
+
+#select_option input[type="radio"]{margin-top: 0;}
+#select_option label{padding-right: 5px; display: inline;}
+
+
+.social-blue-btn:hover
+{
+    text-decoration: none;color:#fff;background: #1c1c1c;
+    background: -moz-linear-gradient(top,  #1c1c1c 1%, #3f3f3f 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#1c1c1c), color-stop(99%,#3f3f3f));
+    background: -webkit-linear-gradient(top,  #1c1c1c 1%,#3f3f3f 99%);
+    background: -o-linear-gradient(top,  #1c1c1c 1%,#3f3f3f 99%);
+    background: -ms-linear-gradient(top,  #1c1c1c 1%,#3f3f3f 99%);
+    background: linear-gradient(to bottom,  #1c1c1c 1%,#3f3f3f 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#3f3f3f',GradientType=0 );
+}
+.social-blue-btn
+{
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background: #5b5b5b;
+    background: -moz-linear-gradient(top,  #5b5b5b 0%, #000000 96%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b5b5b), color-stop(96%,#000000));
+    background: -webkit-linear-gradient(top,  #5b5b5b 0%,#000000 96%);
+    background: -o-linear-gradient(top,  #5b5b5b 0%,#000000 96%);
+    background: -ms-linear-gradient(top,  #5b5b5b 0%,#000000 96%);
+    background: linear-gradient(to bottom,  #5b5b5b 0%,#000000 96%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#000000',GradientType=0);
+}

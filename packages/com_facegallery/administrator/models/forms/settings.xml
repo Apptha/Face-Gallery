@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+       <field name="id" type="hidden"	/>
+
+       <field name="flickr_key" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_FLICKR_KEY"
+              description="COM_FACEGALLERY_FORM_DESC_FLICKR_KEY"
+              filter="safehtml" />
+
+       <field name="flickr_secret" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_FLICKR_SECRET"
+              description="COM_FACEGALLERY_FORM_DESC_FLICKR_SECRET"
+              filter="safehtml" />
+
+       <field name="flickr_user_id" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_FLICKR_USERID"
+              description="COM_FACEGALLERY_FORM_DESC_FLICKR_USERID"
+              filter="safehtml" />
+
+       <field name="picasa_user_name" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_PICASA_USER_NAME"
+              description="COM_FACEGALLERY_FORM_DESC_PICASA_USER_NAME"
+              filter="safehtml" />
+              
+      <field name="facebook_api" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_FACEBOOK_APIKEY"
+              description="COM_FACEGALLERY_FORM_DESC_FACEBOOK_APIKEY"
+              filter="safehtml" />
+
+       <field name="image_height" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_SETTINGS_HEIGHT"
+              description="COM_FACEGALLERY_FORM_DESC_SETTINGS_HEIGHT"
+              filter="safehtml" />
+
+       <field name="image_width" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_SETTINGS_WIDTH"
+              description="COM_FACEGALLERY_FORM_DESC_SETTINGS_WIDTH"
+              filter="safehtml" />
+
+       <field name="large_image_height" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_SETTINGS_HEIGHT"
+              description="COM_FACEGALLERY_FORM_DESC_SETTINGS_HEIGHT"
+              filter="safehtml" />
+
+       <field name="large_image_width" type="text" size="40" class="inputbox"
+              label="COM_FACEGALLERY_FORM_LBL_SETTINGS_WIDTH"
+              description="COM_FACEGALLERY_FORM_DESC_SETTINGS_WIDTH"
+              filter="safehtml" />
+
+        <field name="album_height" type="text" size="40" class="inputbox"
+               label="COM_FACEGALLERY_FORM_LBL_SETTINGS_THUMB_HEIGHT"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_THUMB_HEIGHT"
+               filter="safehtml" />
+
+        <field name="album_width" type="text" size="40" class="inputbox"
+               label="COM_FACEGALLERY_FORM_LBL_SETTINGS_THUMB_WIDTH"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_THUMB_WIDTH"
+               filter="safehtml" />
+
+        <field name="album_row" type="text" size="40" class="inputbox"
+               label="COM_FACEGALLERY_FORM_LBL_SETTINGS_ALBUM_ROW"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_ALBUM_ROW"
+               filter="safehtml" />
+
+        <field name="album_column" type="text" size="40" class="inputbox"
+               label="COM_FACEGALLERY_FORM_LBL_SETTINGS_ALBUM_COLUMN"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_ALBUM_COLUMN"
+               filter="safehtml" />
+
+		<field name="albums_pagination" type="text" size="40" class="inputbox"
+               label="COM_FACEGALLERY_FORM_LBL_SETTINGS_ALBUMS_PAGINATION"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_ALBUMS_PAGINATION"
+               filter="safehtml" />
+               
+        <field name="images_pagination" type="text" size="40" class="inputbox"
+               label="COM_FACEGALLERY_FORM_LBL_SETTINGS_IMAGES_PAGINATION"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_IMAGES_PAGINATION"
+               filter="safehtml" />
+    
+        <field name="download" type="radio" class="btn-group"
+               default="0" label="COM_FACEGALLERY_FORM_LBL_SETTINGS_DOWNLOAD"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_DOWNLOAD"
+               filter="safehtml">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+		</field>
+
+        <field name="sharing" type="radio" class="btn-group"
+               default="0" label="COM_FACEGALLERY_FORM_LBL_SETTINGS_SHARING"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_SHARING"
+               filter="safehtml">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+		</field>
+
+        <field name="display_views" type="radio" class="btn-group"
+               default="0" label="COM_FACEGALLERY_FORM_LBL_SETTINGS_DISPLAY_VIEWS"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_DISPLAY_VIEWS"
+               filter="safehtml">
+               <option value="0">JNO</option>
+               <option value="1">JYES</option>
+		</field>		
+
+        <field name="moderate_comments" type="radio" class="btn-group"
+               default="0" label="COM_FACEGALLERY_FORM_LBL_SETTINGS_MODERATE_COMMENTS"
+               description="COM_FACEGALLERY_FORM_DESC_SETTINGS_MODERATE_COMMENTS"
+               filter="safehtml">
+               <option value="0">JNO</option>
+               <option value="1">JYES</option>
+		</field>
+
+        <field name="updated_on" type="text" size="40" class="inputbox"
+               label="COM_FACEGALLERY_FORM_LBL_IMAGE_UPDATED_ON"
+               description="COM_FACEGALLERY_FORM_DESC_IMAGE_UPDATED_ON"
+               filter="safehtml" />
+    </fieldset>
+</form>

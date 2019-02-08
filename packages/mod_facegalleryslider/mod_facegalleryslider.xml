@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade">
+    <name>Face Gallery Slider</name>
+    <version>1.0</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <copyright>Copyright (C) 2013 Powered by Apptha</copyright>
+    <description>Face Gallery Slider</description>
+    <creationDate>March 2013</creationDate>
+    <author>Apptha</author>
+    <authorEmail>support@apptha.com</authorEmail>
+    <authorUrl>http://www.apptha.com</authorUrl>
+   
+    <files>
+        <filename module='mod_facegalleryslider'>mod_facegalleryslider.php</filename>        
+        <folder>tmpl</folder>
+        <folder>js</folder>
+        <folder>css</folder>
+        <folder>images</folder>        
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_facegalleryslider.xml</filename>  
+    </files>
+    <languages>
+		<language tag="en-GB">en-GB.mod_facegalleryslider.ini</language>
+		<language tag="en-GB">en-GB.mod_facegalleryslider.sys.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params" addfieldpath="/administrator/components/com_facegallery/models/fields">
+            <fieldset name="basic">            	
+                <field name="imageList" type="imagelist" onchange="changeList(this)" 
+                       label="MOD_FACEGALLERYSLIDER_FIELD_SLIDER_OPTION_LABEL"
+                        description="MOD_FACEGALLERYSLIDER_FIELD_SLIDER_OPTION_DESC">
+                         <option value="0">MOD_FACEGALLERYSLIDER_FIELD_POPULAR_IMAGES_LABEL</option>
+                         <option value="1">MOD_FACEGALLERYSLIDER_FIELD_RECENT_IMAGES_LABEL</option>
+                         <option value="2">MOD_FACEGALLERYSLIDER_FIELD_FEATURED_IMAGES_LABEL</option>
+                         <option value="3">MOD_FACEGALLERYSLIDER_FIELD_ALBUMS_LABEL</option>
+
+                </field>
+
+                <field name="albumList" type="albumnames" disabled=""
+				label="MOD_FACEGALLERYSLIDER_FIELD_ALBUM_LABEL" description="MOD_FACEGALLERYSLIDER_FIELD_ALBUM_DESC" />
+
+				
+                <field
+					name="header_text"
+					type="textarea"
+					filter="safehtml"
+					rows="3"
+					cols="40"
+					label="MOD_FACEGALLERYSLIDER_FIELD_HEADER_LABEL"
+					description="MOD_FACEGALLERYSLIDER_FIELD_HEADER_DESC" />
+
+                <field
+					name="footer_text"
+					type="textarea"
+					filter="safehtml"
+					rows="3"
+					cols="40"
+					label="MOD_FACEGALLERYSLIDER_FIELD_FOOTER_LABEL"
+					description="MOD_FACEGALLERYSLIDER_FIELD_FOOTER_DESC" />
+            </fieldset>
+            <fieldset name="FACEGALLERYSLIDER" display="none">
+            	
+                             
+                <field name="sliderstyle" type="list" default="0" 
+                description="MOD_FACEGALLERYSLIDER_FIELD_IMAGE_SLIDER_STYLE_LABEL"
+                label="MOD_FACEGALLERYSLIDER_FIELD_SLIDER_STYLE_LABEL">
+                    <option value="random">random</option>
+                    <option value="cube">cube</option>
+                    <option value="cubeRandom">cubeRandom</option>
+                    <option value="block">block</option>
+                    <option value="cubeStop">cubeStop</option>
+                    <option value="cubeStopRandom">cubeStopRandom</option>
+                    <option value="cubeHide">cubeHide</option>
+                    <option value="cubeSize">cubeSize</option>
+                    <option value="horizontal">horizontal</option>
+                    <option value="showBars">showBars</option>
+                    <option value="showBarsRandom">showBarsRandom</option>
+                    <option value="tube">tube</option>
+                    <option value="fade">fade</option>
+                    <option value="fadeFour">fadeFour</option>
+                    <option value="paralell">paralell</option>
+                    <option value="blind">blind</option>
+                    <option value="blindHeight">blindHeight</option>
+                    <option value="blindWidth">blindWidth</option>
+                    <option value="directionTop">directionTop</option>
+                    <option value="directionBottom">directionBottom</option>
+                    <option value="directionRight">directionRight</option>
+                    <option value="directionLeft">directionLeft</option>
+                    <option value="cubeSpread">cubeSpread</option>
+                    <option value="glassCube">glassCube</option>
+                    <option value="glassBloc">glassBlock</option>
+                    <option value="circles">circles</option>
+                    <option value="circlesInside">circlesInside</option>
+                    <option value="circlesRotate">circlesRotate</option>
+                    <option value="cubeShow">cubeShow</option>
+                    <option value="upBars">upBars</option>
+                    <option value="downBars">downBars</option>
+                    <option value="hideBars">hideBars</option>
+                    <option value="swapBars">swapBars</option>
+                    <option value="swapBarsBack">swapBarsBack</option>
+                    <option value="swapBlocks">swapBlocks</option>
+                    <option value="cut">cut</option>
+                </field>     
+                                       
+                <field
+					name="slidertiming"
+					type="text"
+					filter="safehtml"
+                                        default= "1000"
+					label="MOD_FACEGALLERYSLIDER_FIELD_TIMING_LABEL"
+					description="MOD_FACEGALLERYSLIDER_FIELD_TIMING_DESC" />
+            </fieldset>
+			
+        </fields>
+    </config>
+</extension>
+
+

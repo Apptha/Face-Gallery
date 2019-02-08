@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+     <name>Face Gallery Package</name>
+     <packagename>Face Gallery Package</packagename>
+     <author>Apptha</author>
+     <creationDate>March 2013</creationDate>
+     <copyright>Copyright (C) 2013 Powered by Apptha</copyright>
+     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+     <url>www.apptha.com/</url>
+     <packager>Apptha</packager>
+     <packagerurl>www.apptha.com/</packagerurl>     
+     <authorEmail>support@apptha.com</authorEmail>
+     <authorUrl>www.apptha.com</authorUrl>
+     <version>1.0</version>
+     <description></description>
+     <update>www.apptha.com</update>
+     
+     <files folder="packages">
+           <file type="component" id="com_facegallery" >com_facegallery.zip</file>
+           <file type="module" id="mod_slider" client="site">mod_facegalleryslider.zip</file>
+     </files>
+ </extension>

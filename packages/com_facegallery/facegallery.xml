@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>COM_FACEGALLERY</name>
+    <author>Apptha</author>
+    <creationDate>March 2013</creationDate>
+    <copyright>Copyright (C) 2013 Powered by Apptha</copyright>    
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@apptha.com</authorEmail>
+    <authorUrl>www.apptha.com</authorUrl>
+    <version>1.0</version>
+    <description></description>
+
+    <!-- Database setup -->
+    <scriptfile>script.php</scriptfile>
+    
+    <!-- Runs on install -->
+    <install> 
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <!-- Runs on uninstall -->
+    <uninstall> 
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <!-- The following tag(s) are evaluated by the above subinstall script -->
+
+    <!-- Frontend files -->
+    <files folder="site">
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>facegallery.php</filename>
+            <filename>router.php</filename>
+            <folder>controllers</folder>                                    
+            <folder>helpers</folder>
+            <folder>css</folder>
+            <folder>images</folder>
+            <folder>js</folder>
+            <folder>models</folder>            
+            <folder>views</folder>
+    </files>
+
+    <languages folder="site">
+            <language tag="en-GB">language/en-GB.com_facegallery.ini</language>
+            <language tag="en-GB">language/en-GB.com_facegallery.sys.ini</language>
+    </languages>
+
+     <!-- Backend -->
+    <administration>
+        <!-- Backend Menu & submenu -->
+        <menu>COM_FACEGALLERY</menu>
+        <submenu>
+            <menu link="option=com_facegallery&amp;view=albums" view="albums">COM_FACEGALLERY_TITLE_ALBUMS</menu>
+            <menu link="option=com_facegallery&amp;view=images" view="images">COM_FACEGALLERY_TITLE_IMAGES</menu>
+            <menu link="option=com_facegallery&amp;view=social" view="social">COM_FACEGALLERY_TITLE_SOCIAL</menu>
+            <menu link="option=com_facegallery&amp;view=comments" view="comments">COM_FACEGALLERY_TITLE_COMMENTS</menu>
+            <menu link="option=com_facegallery&amp;view=settings" view="settings">COM_FACEGALLERY_TITLE_SETTINGS</menu>
+        </submenu>
+
+        <!-- Backend Files -->
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>facegallery.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>js</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+
+        <languages folder="administrator">
+            <language tag="en-GB">language/en-GB.com_facegallery.ini</language>
+            <language tag="en-GB">language/en-GB.com_facegallery.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
